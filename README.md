@@ -1,3 +1,7 @@
+## Live Demo
+
+Check out the live version of my portfolio here: [Shad Abdullah Portfolio](https://excavitor.github.io/Portfolio/)
+
 # Personal Portfolio Website
 
 ![Portfolio Preview](./images/portfolio_preview.png)
