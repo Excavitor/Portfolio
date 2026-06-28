@@ -1,0 +1,105 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+% ---- Section heading style (plain black, bold, with a thin rule) ------------
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+% ---- Lists ------------------------------------------------------------------
+\setlist[itemize]{leftmargin=1.5em, topsep=2pt, itemsep=1pt, parsep=0pt, label=\textbullet}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+% Helper: title row with right-aligned date
+\newcommand{\entry}[2]{\noindent\textbf{#1}\hfill{#2}\\[1pt]}
+
+\begin{document}
+
+% ----------------------------- HEADER ----------------------------------------
+\begin{center}
+  {\LARGE\bfseries Shad Abdullah}\\[5pt]
+  \small
+  Dhaka, Bangladesh $\cdot$ 01766880797 $\cdot$
+  \href{mailto:shad2000abdullah@gmail.com}{shad2000abdullah@gmail.com}\\[2pt]
+  \href{https://www.linkedin.com/in/shad-abdullah-a56038241/}{LinkedIn} $\cdot$
+  \href{https://github.com/Excavitor}{GitHub}
+\end{center}
+
+% --------------------------- EDUCATION ---------------------------------------
+\section{Education}
+\entry{B.Sc. in Computer Science and Engineering, North South University}{Jan 2019 -- Feb 2024}
+Dhaka, Bangladesh
+
+% --------------------------- EXPERIENCE --------------------------------------
+\section{Experience}
+\entry{Backend Engineer, Brainicon Technology}{Apr 2025 -- Present}
+\begin{itemize}
+  \item Design and build scalable REST APIs for multi-tenant SaaS products using
+        Django, Django REST Framework and PostgreSQL.
+  \item Own backend architecture end-to-end: data modeling, JWT authentication,
+        role-based access control, and Dockerized development and deployment.
+  \item Collaborate using Git-based workflows and write API documentation for
+        frontend and mobile teams.
+\end{itemize}
+
+\entry{Data Analytics Intern, eSystems Research and Development Lab}{Sep 2023 -- Dec 2023}
+\begin{itemize}
+  \item Completed a 4-month industrial training program (ICT Division,
+        Government of Bangladesh research grant) on data analytics.
+  \item Built data pipelines and a web application with Python, SQL, Pandas and
+        Flask; visualized insights with Matplotlib for data-driven decisions.
+  \item Scored 100\% on task completion, communication and coding assessments.
+\end{itemize}
+
+% --------------------------- PROJECTS ----------------------------------------
+\section{Projects}
+\entry{Agami EMS -- Multi-Tenant Education Management SaaS}{2025}
+\begin{itemize}
+  \item Architected a multi-tenant SaaS platform from scratch using
+        django-tenants with isolated public and per-tenant PostgreSQL schemas,
+        serving multiple institutions from a single codebase.
+  \item Implemented a custom group-aware JWT authentication layer,
+        tenant/portal context switching, Google OAuth, reCAPTCHA, and an
+        email-based invitation and role-assignment system.
+  \item Built core modules: Campus, People, Exams (marks calculation, grouping,
+        publish/lock academic periods) and Finance (income, expense and debt
+        ledger).
+  \item Containerized the stack with Docker and Docker Compose; served via
+        Gunicorn and WhiteNoise.
+\end{itemize}
+
+
+
+\entry{Medical Insurance Cost Prediction -- Machine Learning Project}{2024}
+\begin{itemize}
+  \item Developed a machine learning model using Random Forest Regression to
+        predict medical insurance costs with 90\% accuracy.
+  \item Improved model performance through hyperparameter tuning using Python,
+        Pandas and Scikit-learn.
+\end{itemize}
+
+% ------------------------- PUBLICATION ---------------------------------------
+\section{Publication}
+\entry{Identifying Threats on Social Media to Spot Offensive Behavior (IEEE)}{2024}
+\begin{itemize}
+  \item Fine-tuned DistilBERT, m-BERT, XLM-RoBERTa and BanglaBERT on 44,000
+        Bangla social-media comments; achieved 0.83 accuracy (XLM-RoBERTa) and
+        0.85 AUC (m-BERT).
+  \item Paper: \href{https://ieeexplore.ieee.org/document/10705230}{https://ieeexplore.ieee.org/document/10705230}
+\end{itemize}
+
+% --------------------------- SKILLS ------------------------------------------
+\section{Skills}
+\textbf{Languages:} Python, SQL, C \\
+\textbf{Backend:} Django, Django REST Framework, django-tenants, JWT, Flask, REST APIs \\
+\textbf{Databases:} PostgreSQL, MySQL, pgAdmin \\
+\textbf{DevOps and Tools:} Docker, Docker Compose, Git, Gunicorn, WhiteNoise, VS Code, PyCharm \\
+\textbf{ML and Data:} Pandas, Matplotlib, Seaborn, Scikit-learn, Machine Learning, NLP
+
+\end{document}
